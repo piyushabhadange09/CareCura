@@ -1,0 +1,57 @@
+/* Navbar main layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* allows absolute centering */
+  padding: 1rem 2rem;
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center navigation properly */
+.center-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Right side: login/register */
+.auth-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
+/* Auth buttons (Login/Register) */
+/* Navbar main layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /* changed from relative to sticky */
+  top: 0; /* sticks to the top */
+  z-index: 1000; /* ensures it stays above other content */
+  padding: 1rem 2rem;
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center navigation properly */
+.center-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Right side: login/register */
+.auth-links {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+}
