@@ -1,0 +1,77 @@
+.dashboard-container {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom right, #99a0a5, #dbe6f2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.dashboard-title {
+  font-size: 2.8rem;
+  color: #1a202c;
+  margin-bottom: 3rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.dashboard-card {
+  background: linear-gradient(145deg, #ffffff, #e6f0ff);
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: linear-gradient(145deg, #3182ce, #63b3ed);
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-icon {
+  font-size: 3rem;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover .card-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.dashboard-card:hover .card-desc {
+  color: #e0f2ff;
+}
